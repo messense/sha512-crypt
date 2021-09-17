@@ -1,0 +1,18 @@
+[package]
+name = "sha512-crypt"
+version = "0.1.0"
+edition = "2018"
+description = "Python binding to Rust sha-crypt password hashing crate"
+license = "MIT"
+repository = "https://github.com/messense/sha512-crypt"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "sha512_crypt"
+crate-type = ["cdylib"]
+
+[dependencies]
+sha-crypt = "0.3.0"
+pyo3 = { version = "0.14.5", features = ["abi3-py36", "extension-module"] }
