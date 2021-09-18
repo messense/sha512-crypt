@@ -14,5 +14,5 @@ name = "sha512_crypt"
 crate-type = ["cdylib"]
 
 [dependencies]
-sha-crypt = "0.3.0"
+sha-crypt = "0.3.1"
 pyo3 = { version = "0.14.5", features = ["abi3-py36", "extension-module"] }
